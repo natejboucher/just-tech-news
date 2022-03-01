@@ -68,6 +68,7 @@ router.post('/', withAuth, (req, res) => {
         req.session.loggedIn = true;
         res.json(dbUserData);
       });
+      document.location.replace('/dashboard');
     })
 });
 
