@@ -87,7 +87,7 @@ router.post('/', (req, res) => {
     .then(dbPostData => res.json(dbPostData))
     .catch(err => {
       console.log(err);
-      res.status(500).json({ message: "You made it here!" });
+      res.status(500).json({ message: `You made it here! ,${err}` });
     });
 });
 
